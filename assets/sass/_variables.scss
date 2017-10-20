@@ -1,0 +1,145 @@
+// Typography
+$base-font-family: $font-stack-system;
+$heading-font-family: $base-font-family;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: 1.5em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$red: hsl(0, 100%, 50%);
+$green: hsl(88, 50%, 53%);
+$blue: hsl(212, 80%, 42%);
+$orange: hsl(212, 80%, 42%);
+$yellow: hsl(54, 100%, 62%);
+$dark-gray: hsl(0, 0%, 20%);
+$medium-gray: hsl(0, 0%, 60%);
+$light-gray: hsl(0, 0%, 87%);
+$black: hsl(0, 0%, 7%);
+$white: hsl(0, 0%, 87%);
+
+$punchout: hsla(322, 100%, 50%, 0.49);
+$punchout-grid: hsla(146, 100%, 50%, 0.14);
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $blue;
+
+
+// Font Sizes
+$sans-xlarge: calc(9.5237vw - 2%);
+$sans-large: 2rem;
+$sans-medium: 1rem;
+$sans-small: 0.5rem;
+
+$serif-large: 2rem;
+$serif-medium: 1rem;
+$serif-small: 0.5rem;
+// Font families
+
+$serif-heavy: 700;
+$serif-medium: 500;
+
+$sans-heavy: 700;
+$sans-medium: 400;
+
+// Helper mixins
+@mixin serif() {font-family: 'Bitter', serif};
+@mixin sans() {font-family: 'Montserrat', sans-serif};
+
+
+@mixin logo() {
+  @include sans;
+  font-weight: $sans-heavy;
+  font-size: $sans-xlarge;
+}
+@mixin sans-heavy() {
+  @include sans;
+  font-weight: $sans-heavy;
+}
+@mixin sans-medium() {
+  @include sans;
+  font-weight: $sans-medium;
+}
+@mixin serif-heavy() {
+  @include serif;
+  font-weight: $serif-heavy;
+}
+@mixin serif-medium() {
+  @include serif;
+  font-weight: $herif-heavy;
+}
+
+// Main font levels
+
+@mixin sans-heavy-large() {
+  @include sans-heavy();
+  font-size: $sans-large;
+}
+@mixin sans-medium-large() {
+  @include sans-medium();
+  font-size: $sans-large;
+}
+@mixin sans-heavy-medium() {
+  @include sans-heavy();
+  font-size: $sans-medium;
+}
+@mixin sans-medium-medium() {
+  @include sans-medium();
+  font-size: $sans-medium;
+}
+@mixin sans-medium-small() {
+  @include sans-medium();
+  font-size: $sans-small;
+}
+
+@mixin serif-heavy-large() {
+  @include serif-heavy();
+  font-size: $serif-large;
+}
+@mixin serif-medium-large() {
+  @include serif-medium();
+  font-size: $serif-large;
+}
+@mixin serif-heavy-medium() {
+  @include serif-heavy();
+  font-size: $serif-medium;
+}
+@mixin serif-medium-medium() {
+  @include serif-medium();
+  font-size: $serif-medium;
+}
+@mixin serif-medium-small() {
+  @include serif-medium();
+  font-size: $serif-small;
+}
+
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+// Grids
+$blvnk-grid: (
+  columns: 6,
+  gutter: 1%,
+);

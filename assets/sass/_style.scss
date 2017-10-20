@@ -1,0 +1,71 @@
+@import "~assets/sass/neat";
+
+.BV-grid {
+  @include grid-container;
+  margin: 0 auto;
+  max-width: 66.;
+  width: 100%;
+  background: linear-gradient($dark-gray, $black);
+}
+
+.BV-logo {
+  height: 66.666vh;
+  box-sizing: border-box;
+  @include grid-column(1, $blvnk-grid);
+  .logo {
+    position: absolute;
+    display: block;
+    transform: rotate(270deg);
+    color: $black;
+    width: auto;
+    background: linear-gradient($yellow, $orange); 
+
+    @include logo();
+  }
+}
+
+.BV-col1 {
+  @include grid-column(1, $blvnk-grid);
+}
+
+.BV-col2 {
+  @include grid-column(2, $blvnk-grid);
+}
+
+.BV-col3 {
+  @include grid-column(3, $blvnk-grid);
+}
+
+.BV-col4 {
+  @include grid-column(4, $blvnk-grid);
+}
+
+.BV-col5 {
+  @include grid-column(5, $blvnk-grid);
+}
+
+.BV-col6 {
+  @include grid-column(6, $blvnk-grid);
+}
+
+.title
+{
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  display: block;
+  font-weight: 300;
+  font-size: 64px;
+  color: $yellow;
+  letter-spacing: 1px;
+}
+.subtitle
+{
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+.links
+{
+  padding-top: 15px;
+}
