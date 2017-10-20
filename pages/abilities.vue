@@ -1,9 +1,9 @@
 <template>
-  <section class="container">
+  <section class="container dev">
     <div>
       <BLVNKHeader/>
       <BLVNKNav/>
-      <BLVNKContent prop:page="index"/>
+      <BLVNKContent prop:page="Abilities"/>
       <BLVNKFooter/>
     </div>
   </section>
