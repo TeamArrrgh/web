@@ -40,43 +40,21 @@
               </v-btn>
               <span>Source</span>
             </v-tooltip>
-            <line-chart 
-            :chart-data="datacollection"></line-chart>
           </v-layout>
         </v-container>
       </v-content>
     </main>
     <v-footer app fixed>
-      <span>&copy; Powered by Simplexity</span>
+      <span>&copy; 2017</span>
     </v-footer>
   </v-app>
 </template>
 
 <script>
-  import Vue from 'vue'
-  import Vuetify from 'vuetify'
-  import LineChart from '~/components/LineChart.vue'
-  import('~/node_modules/vuetify/dist/vuetify.min.css')
- 
-  Vue.use(Vuetify)
   export default {
-    components: {
-      LineChart
-    },
-    data () {
-      return {
-        datacollection: {
-          labels: ['January', 'February', 'January', 'February', 'January', 'February'],
-          datasets: [
-            {
-              label: 'Data One',
-              backgroundColor: '#f87979',
-              data: [80, 0]
-            }
-          ]
-        }
-      }
-    },
+    data: () => ({
+      drawer: true
+    }),
     props: {
       source: String
     }

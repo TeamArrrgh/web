@@ -3,7 +3,7 @@
 .BV-grid {
   @include grid-container;
   margin: 0 auto;
-  max-width: 66.;
+  max-width: 66vh;
   width: 100%;
   background: linear-gradient($dark-gray, $black);
 }

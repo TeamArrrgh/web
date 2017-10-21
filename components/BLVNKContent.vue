@@ -1,18 +1,21 @@
 <template>
-  <div class="BV-grid show-grid">
-      <div class="BV-logo">
-        <div class="logo">
-          E<span>V</span>.IO
-        </div>
-      </div>
-      <div class="BV-col1 serif-medium-large">
-        <p>
-          Hey there
-        </p>
-      </div>
+  <div class="container">
+    <h1>Vue-ChartJs</h1>
+  <commitChart></commitChart>
+
+  <lineChart></lineChart>
   </div>
 </template>
 
 <style lang="scss">
 @import "~assets/sass/components/content";
 </style>
+
+
+<script>
+export default {
+  data: function () {
+    return { message: 'blha' }
+  }
+}
+</script>

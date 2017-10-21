@@ -1,8 +1,29 @@
 @import "~assets/sass/main";
-nav {
+.dashboard-nav {
     position: absolute;
     padding: 0;
     margin: 0;
-    height: 16.666vh;
-    background: $green;
+    height: 100%;
+    width: 250px;
+    background: $white;
+}
+
+.dashboard-nav .dashboard-heading{
+	background: $red;
+	color: $white;
+	height: 85px;
+	line-height: 85px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.dashboard-nav ul.dashboard-menu{
+	color: $dark-gray;
+}
+
+.dashboard-nav ul.dashboard-menu li{
+	color: $dark-gray;
+	height: 85px;
+	line-height: 85px;
+	border-bottom: 1px solid #b9b9bf;
 }
