@@ -16,7 +16,8 @@
     "chart.js": "^2.7.0",
     "nuxt": "^1.0.0-rc9",
     "vue-chartjs": "^3.0.0",
-    "vuetify": "^0.16.9"
+    "vuetify": "^0.16.9",
+    "vue": "^2.5.2"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
